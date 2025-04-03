@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fintellect - Trading</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffe6f2;
+            text-align: center;
+            background-image: url('https://source.unsplash.com/1600x900/?finance,stocks');
+            background-size: cover;
+        }
+        header {
+            background: #ff66b2;
+            color: white;
+            padding: 20px;
+            font-size: 24px;
+        }
+        .container {
+            padding: 20px;
+        }
+        .stock-box {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            margin: 20px auto;
+            width: 50%;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .button {
+            background: #ff3399;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+        .button:hover {
+            background: #cc0066;
+        }
+    </style>
+</head>
+<body>
+    <header>Fintellect - Start Trading</header>
+    <div class="container">
+        <h2>Buy & Sell Stocks</h2>
+        <p>Choose a stock and start trading instantly.</p>
+        
+        <div class="stock-box">
+            <h3>Apple Inc. (AAPL)</h3>
+            <p>Current Price: $175.23</p>
+            <button class="button" onclick="buyStock('Apple Inc.', 175.23)">Buy</button>
+            <button class="button" onclick="sellStock('Apple Inc.', 175.23)">Sell</button>
+        </div>
+        
+        <div class="stock-box">
+            <h3>Tesla Inc. (TSLA)</h3>
+            <p>Current Price: $682.45</p>
+            <button class="button" onclick="buyStock('Tesla Inc.', 682.45)">Buy</button>
+            <button class="button" onclick="sellStock('Tesla Inc.', 682.45)">Sell</button>
+        </div>
+        
+        <div class="stock-box">
+            <h3>Amazon.com Inc. (AMZN)</h3>
+            <p>Current Price: $3,345.23</p>
+            <button class="button" onclick="buyStock('Amazon.com Inc.', 3345.23)">Buy</button>
+            <button class="button" onclick="sellStock('Amazon.com Inc.', 3345.23)">Sell</button>
+        </div>
+        
+        <br>
+        <a href="dashboard.html" class="button">Back to Dashboard</a>
+    </div>
+    
+    <script>
+        function buyStock(stockName, price) {
+            alert(`You have bought ${stockName} at $${price}`);
+        }
+        function sellStock(stockName, price) {
+            alert(`You have sold ${stockName} at $${price}`);
+        }
+    </script>
+</body>
+</html>

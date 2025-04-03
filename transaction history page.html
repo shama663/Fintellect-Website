@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fintellect - Transaction History</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffe6f2;
+            text-align: center;
+        }
+        header {
+            background: #ff66b2;
+            color: white;
+            padding: 20px;
+            font-size: 24px;
+        }
+        .container {
+            padding: 20px;
+        }
+        .history-box {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ff3399;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #ff66b2;
+            color: white;
+        }
+        .button {
+            background: #ff3399;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+        .button:hover {
+            background: #cc0066;
+        }
+    </style>
+</head>
+<body>
+    <header>Fintellect - Transaction History</header>
+    <div class="container">
+        <h2>Your Past Transactions</h2>
+        <div class="history-box">
+            <table>
+                <tr>
+                    <th>Date</th>
+                    <th>Stock Name</th>
+                    <th>Action</th>
+                    <th>Shares</th>
+                    <th>Price per Share</th>
+                    <th>Total Amount</th>
+                </tr>
+                <tr>
+                    <td>2025-04-02</td>
+                    <td>Apple (AAPL)</td>
+                    <td>Buy</td>
+                    <td>10</td>
+                    <td>$150</td>
+                    <td>$1500</td>
+                </tr>
+                <tr>
+                    <td>2025-04-01</td>
+                    <td>Tesla (TSLA)</td>
+                    <td>Sell</td>
+                    <td>5</td>
+                    <td>$620</td>
+                    <td>$3100</td>
+                </tr>
+                <tr>
+                    <td>2025-03-30</td>
+                    <td>Amazon (AMZN)</td>
+                    <td>Buy</td>
+                    <td>3</td>
+                    <td>$3200</td>
+                    <td>$9600</td>
+                </tr>
+            </table>
+        </div>
+        <br>
+        <a href="dashboard.html" class="button">Back to Dashboard</a>
+    </div>
+</body>
+</html>
